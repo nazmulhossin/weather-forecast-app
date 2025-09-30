@@ -1,6 +1,14 @@
+import Layout from "./app/layout/Layout"
+import { ThemeProvider } from "./app/providers/ThemeProvider"
+
 const App = () => {
   return (
-    <div>App</div>
+    <ThemeProvider defaultTheme="light">
+      <Layout>
+        Main content
+      </Layout>
+    </ThemeProvider>
+
   )
 }
 
